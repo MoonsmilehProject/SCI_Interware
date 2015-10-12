@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.weiwangcn.betterspinner.library.BetterSpinner
+        android:id="@+id/dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="#000000"
+        android:hint="Seleccionar día" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/ColorPrimary"
+        android:text="Horas Capturadas"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Proyecto"
+            android:layout_weight="4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fase"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Horario"
+            android:layout_weight="3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        style="?android:listSeparatorTextViewStyle"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="250dp"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-400dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/redPrimary"
+        fab:fab_addButtonColorPressed="@color/blue_semi_transparent_pressed"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_rapida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/greenSecondary"
+            fab:fab_title="Captura rápida"
+            fab:fab_icon="@drawable/ic_action_flash_on"
+            fab:fab_colorPressed="@color/white_pressed"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_oportunidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/orangeSecondary"
+            fab:fab_icon="@drawable/ic_action_work"
+            fab:fab_title="Captura oportunidad"
+            fab:fab_colorPressed="@color/white_pressed"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_proyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/redPrimary"
+            fab:fab_icon="@drawable/ic_action_folder"
+            fab:fab_title="Captura proyecto"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</LinearLayout>

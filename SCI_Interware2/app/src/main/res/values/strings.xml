@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SCI_Interware</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_contrasenha">Contraseña</string>
+    <string name="recuerdame">Recuérdame</string>
+    <string name="login">Login</string>
+
+    <!-- NAVIGATION -->
+    <string name="open_drawer">Drawer abierto</string>
+    <string name="close_drawer">Drawer cerrado</string>
+    <string name="titulo">Captura Individual</string>
+</resources>

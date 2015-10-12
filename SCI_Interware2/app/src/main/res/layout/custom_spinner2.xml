@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dp"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:text="Proyecto"
+        android:layout_weight="4"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:text="Fase"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:text="Horario"
+        android:layout_weight="3"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:text="Total"
+        android:layout_weight="1"/>
+
+</LinearLayout>
